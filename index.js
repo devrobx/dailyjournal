@@ -1,3 +1,5 @@
+
+
 const express = require('express');
 const path = require('path');
 const exphbs  = require('express-handlebars');
@@ -11,7 +13,7 @@ const passport = require('passport');
 const session = require('express-session');
 const {ensureAuthenticated} = require('./helpers/auth');
 
-
+//initialize express
 const app = express();
 
 //Load routes
@@ -98,7 +100,7 @@ app.get('/about', (req,res) =>{
 
 
 
-
+// changes to index
 
 
 //Entry routes
@@ -108,7 +110,7 @@ app.use('/entry', entry);
 app.use('/users', users);
 
 
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 
 

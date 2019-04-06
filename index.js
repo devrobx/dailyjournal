@@ -95,7 +95,7 @@ app.get('/', (req,res) =>{
 
 // ABOUT ROUTE
 app.get('/about', (req,res) =>{
-    res.render('About');
+    res.render('about');
 });
 
 

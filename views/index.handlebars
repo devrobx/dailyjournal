@@ -1,14 +1,66 @@
-<div class="jumbotron jumbotron-fluid text-center jumbo ">
-   <div class="container-fluid">
-    <div class="display-12">{{title}}</div>
-    <hr>
-    <p class="lead">"Keep a diary and someday it'll keep you"</p>
-    <p>-Mae West</p>
+
+<div class="container-fluid landing">
+   <div class="d-flex flex-column justify-content-center align-items-center pt-5">
+        <div class="titleSection pt-5 mt-5">
+            <h3 class="title text-center">{{title}}</h3>
+        </div>
+        <hr>
+
+        <div class="quotesection">
+           <p class="quote text-center">
+               "Keep a diary and someday it'll keep you"
+           </p>
+
+           <p class="author text-center">
+               -Mae West
+           </p>
+        </div>
+           <br>
+         {{#if user}}
+
+         <div class="button">
+           <a href="/entry" class="btn btn-primary text-center custBtn">View Entries</a>
+           </div>
+
+
+         {{else}}
+           <div class="button">
+           <a href="/users/register" class="btn btn-primary text-center custBtn">I'm ready to Journal</a>
+           </div>
+        {{/if}}
+        
+   </div>
     
-    </div>
 </div>
-  
-   
+
+<footer>
+    <div class="footer container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <p class="text-center">application created by Robert Magomero</p>
+            </div>
+        </div>
+
+          <div class="icon text-center">
+
+                    <a href="https://www.linkedin.com/in/robert-magomero-6551a0123/"></a><i
+                        class="fab fa-linkedin mycon hvr-float-shadow " title="Linkedin"></i></a>
+
+                    <a href="https://drive.google.com/file/d/1J2f1x_XaDH0ixEr8RrNGbHIBNOa8oflF/view?usp=drivesdk"> <i
+                            class="fas fa-file mycon hvr-float-shadow " title="Resume"></i></a>
+
+                    <a href="https://github.com/devrobx"><i class="fab fa-github mycon hvr-float-shadow "
+                            title="Github"></i></a>
+
+                    <a href="mailto:robertmagomero@gmail.com?Subject=Hello%20Robert" target="_top"><i
+                            class="fas fa-envelope-square mycon hvr-float-shadow" title="Email"></i></a>
+
+
+
+
+                </div>
+    </div>
+</footer>
    
     
 

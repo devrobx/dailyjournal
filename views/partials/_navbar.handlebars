@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+<nav class="navbar navbar-expand-sm navbar-dark nav-custom">
         <div class="container">
-  <a class="navbar-brand" href="/">Daily Journal</a>
+  <a class="navbar-brand" href="/">DailyJournal</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,9 +8,9 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link hvr-underline-from-center" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item hvr-underline-from-center">
         <a class="nav-link" href="/about">About</a>
       </li>
       </ul>
@@ -21,25 +21,25 @@
      
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown">Entries</a>
+          <a href="#" class="nav-link dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" id="navbarDropdown">Entries</a>
           <div class="dropdown-menu">
             <a href="/entry/add" class="dropdown-item">Add Entry</a>
             <a href="/entry" class="dropdown-item">Entries</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a href="/users/logout" class="nav-link">Logout</a>
+        <li class="nav-item ">
+          <a href="/users/logout" class="nav-link ">Logout</a>
         </li>
       </ul>
 
     {{else}}
 
      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a href="/users/login" class="nav-link">Login</a>
+        <li class="nav-item ">
+          <a href="/users/login" class="nav-link hvr-underline-from-center">Login</a>
         </li>
          <li class="nav-item">
-          <a href="/users/register" class="nav-link">Register</a>
+          <a href="/users/register" class="nav-link hvr-underline-from-center">Register</a>
         </li>
 
       </ul>

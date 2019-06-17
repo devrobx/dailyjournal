@@ -1,13 +1,195 @@
-body{
-    font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Roboto|Roboto+Condensed|Teko&display=swap');
 
+:root{
+    /* FONTS */
+    --roboto: 'Roboto', sans-serif;
+    --openSans: 'Open Sans', sans-serif;
+    --robCon: 'Roboto Condensed', sans-serif;
+    --openCon: 'Open Sans Condensed', sans-serif;
+    --teko: 'Teko', sans-serif;
+
+    /* COLORS */
+    --bluegray:rgba(49, 54, 63, 1); 
+    --cement:rgba(91, 100, 112, 1); 
+    --clean:rgba(140, 147, 161, 1); 
+    --cloudy:rgba(188, 198, 214, 1); 
+    --coolblue:rgba(223, 226, 255, 1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
 }
 
 
-.jumbo{
-    background: white;
+.landing{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),url('/img/mount.jpg');
+    min-height: 90vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.landing:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)),url('/img/mount.jpg');
+    transition: ease-in .8s;
+    min-height: 90vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:0px 0px 8px var(--cement); 
+}
 .navbar{
-    background: black;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), transparent;
+    box-shadow:0px 0px 8px var(--bluegray);
+}
+
+.navbar-brand{
+    padding-top: 10px;
+    font-family: var(--teko);
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover{
+    color: var(--cement);
+}
+
+.nav-link{
+    font-family: var(--openCon);
+    text-transform: uppercase;
+    font-weight: 3px;
+}
+
+.title{
+    font-family: var(--teko);
+    color: white;
+    font-weight: 2px;
+    font-size: 3rem;
+}
+.title-sm{
+    font-family: var(--teko);
+    color: black;
+    font-weight: 2px;
+    font-size: 1.7rem;
+
+}
+
+.text{
+    font-family: var(--openCon);
+    font-size: 1.2rem;
+    font-weight: 8px;
+    color: black;
+}
+
+.quote, .author{
+    font-family: var(--openCon);
+    color: white;
+    font-size: 1.5rem;
+}
+.author{
+    font-style: italic;
+}
+.custBtn{
+
+    padding: 10px 8px;
+    background: black !important;
+    color: white !important;
+    border: none !important;
+    text-transform: uppercase;
+}
+
+.custBtn:hover{
+    background:var(--bluegray) !important;
+    color: white !important;
+    text-transform: uppercase;
+
+}
+
+
+
+.about{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),url('/img/leaf.jpg');
+   
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:0px 0px 8px var(--cement); 
+
+}
+.about:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)),url('/img/leaf.jpg');
+    transition-delay: 1s;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow:0px 0px 8px var(--cement); 
+
+}
+.footer{
+    margin: 0;
+    padding-top: 10px;
+    font-family: var(--openSans);
+    color: white;
+    font-size: .5rem;
+    font-style: italic;
+    height: 10vh;
+    background-color: var(--bluegray);
+}
+
+.card{
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),transparent;
+
+}
+
+.card-cust{
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),transparent;
+  
+  }
+
+.label{
+    font-family: var(--openCon);
+    color: white;
+}
+
+.entrybg{
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+min-height: 100vh;
+box-shadow: 0px 0px 8px var(--cement);
+
+}
+
+.editbg{
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+min-height: 100vh;
+box-shadow: 0px 0px 8px var(--cement);
+
+}
+
+.addbg{
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+min-height: 100vh;
+box-shadow: 0px 0px 8px var(--cement);
+}
+
+.mycon {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.mycon:hover {
+    color: var(--mgray);
+    cursor: pointer;
 }

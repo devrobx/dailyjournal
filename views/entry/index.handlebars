@@ -1,15 +1,15 @@
 
-<div class="container-fluid">
+<div class="container-fluid entrybg">
 {{#each diaries}}
 
-<div class="card card-body mb-2 mt-2">
-    <h4>{{title}}</h4>
-    <p>{{date}}</p>
-    <p>{{entry}}</p>
-    <a class="btn btn-dark btn-block mb-2" href="/entry/edit/{{id}}">Edit</a>
+<div class="card card-body mb-2 pt-3 card-cust">
+    <h4 class="title-sm">{{title}}</h4>
+    <p class="text">{{date}}</p>
+    <p class="text">{{entry}}</p>
+    <a class="btn btn-dark btn-block mb-2 label" href="/entry/edit/{{id}}">Edit</a>
     <form action="/entry/{{id}}?_method=DELETE" method="post">
     <input type="hidden" name="_method" value="DELETE">
-    <input type="submit" class="btn btn-danger btn-block" value="Delete">
+    <input type="submit" class="btn btn-danger btn-block label" value="Delete">
     </form>
 </div>
 
@@ -18,3 +18,4 @@
 
 {{/each}}
 </div>
+

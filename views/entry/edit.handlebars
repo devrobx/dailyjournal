@@ -1,5 +1,5 @@
 
-<div class="container-fluid">
+<div class="container-fluid editbg pt-5">
 {{#each errors }}
 <div class="alert alert-danger">{{text}}</div>
 
@@ -9,20 +9,21 @@
 {{/each}}
 
 
-<div class="card card-body mt-3">
-    <h3 class="text-center">Edit Diary Entry</h3>
+<div class="card card-body pt-5 ">
+    <h3 class="text-center title-sm" style="color: white;">Edit Diary Entry</h3>
     <form action="/entry/{{entry.id}}?_method=PUT" method="POST">
     <input type="hidden" name="_method" value="PUT">
     <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title" class="text" style="color: white;">Title</label>
         <input type="text" class="form-control" name="title" value= "{{entry.title}}"required>
     </div>
     <div class="form-group">
-        <label for="Entry">Entry</label>
+        <label for="Entry" class="text"  style="color: white;">Entry</label>
         <textarea class="form-control" name="entry" required >{{entry.entry}}</textarea>
     </div>
-    <button type="submit" class="btn btn-secondary text-center">Submit</button>
+    <button type="submit" class="btn btn-secondary text-center text">Submit</button>
     </form>
 </div>
 
 </div>
+

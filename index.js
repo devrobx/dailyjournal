@@ -85,7 +85,7 @@ app.use(passport.session());
 
 // INDEX ROUTE
 app.get('/', (req,res) =>{
-    const title = 'Welcome to Daily Journal';
+    const title = 'Welcome to DailyJournal';
     res.render('index', {
         title: title
     });
